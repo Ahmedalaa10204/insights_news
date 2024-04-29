@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:insights_news/features/home/widgets/home_header.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+class SourceView extends StatelessWidget {
+  const SourceView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,9 +10,7 @@ class HomeView extends StatelessWidget {
         body: Padding(
           padding: EdgeInsets.all(15),
           child: Column(
-            children: [
-              HomeHeader(),
-            ],
+            children: [],
           ),
         ),
       ),

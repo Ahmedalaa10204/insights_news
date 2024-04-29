@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:insights_news/core/utils/colors.dart';
-import 'package:insights_news/features/home/view/home_view.dart';
-import 'package:insights_news/features/profile/profile_view.dart';
-import 'package:insights_news/features/search/search_view.dart';
-import 'package:insights_news/features/source/source_view.dart';
+import 'package:insights_news/features/views/home/views/home_view.dart';
+import 'package:insights_news/features/views/profile/profile_view.dart';
+import 'package:insights_news/features/views/search/search_view.dart';
+import 'package:insights_news/features/views/source/source_view.dart';
+
 
 class NavBarWidget extends StatefulWidget {
   const NavBarWidget({super.key});

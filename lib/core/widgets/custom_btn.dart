@@ -8,11 +8,15 @@ class CustomButton extends StatelessWidget {
     required this.onPressed,
     this.width,
     this.height,
+    this.bgColor,
+    this.fgColor,
   });
   final String text;
   final Function() onPressed;
   final double? width;
   final double? height;
+  final Color? bgColor;
+  final Color? fgColor;
 
   @override
   Widget build(BuildContext context) {
@@ -21,8 +25,8 @@ class CustomButton extends StatelessWidget {
         width: width ?? 250,
         child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.cardColor,
-                foregroundColor: AppColors.white,
+                backgroundColor: bgColor ?? AppColors.cardColor,
+                foregroundColor: fgColor ?? AppColors.white,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10))),
             onPressed: onPressed,
